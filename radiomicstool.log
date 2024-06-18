@@ -1,0 +1,313 @@
+2023-07-19 08:38:53,576 - radiomicsTool - ERROR - <module> - 222 - 'PCA' object has no attribute 'fix'
+Traceback (most recent call last):
+  File "g:/NFYYProjects/radiomics/radiomics/RadiomicsTool.py", line 220, in <module>
+    modelPCA.fix(x)
+AttributeError: 'PCA' object has no attribute 'fix'
+2023-07-19 16:29:06,653 - radiomicsTool - ERROR - extractNiiFeatures - 112 - BraTS19_2013_0_1, local variable 'df' referenced before assignment
+Traceback (most recent call last):
+  File "g:/NFYYProjects/radiomics/radiomics/RadiomicsTool.py", line 110, in extractNiiFeatures
+    df = pd.concat([df, pd.DataFrame([features])], ignore_index=True)
+UnboundLocalError: local variable 'df' referenced before assignment
+2023-08-17 17:13:43,588 - radiomicsTool - ERROR - runTTest - 359 - diagnostics_Image-original_Mean, name 'pData' is not defined
+Traceback (most recent call last):
+  File "g:\NFYYProjects\radiomics\radiomics\featureselection.py", line 345, in runTTest
+    pData[colName],
+NameError: name 'pData' is not defined
+2023-08-21 15:20:20,838 - radiomicsTool - ERROR - runRandomForest - 728 - Found input variables with inconsistent numbers of samples: [233, 1]
+Traceback (most recent call last):
+  File "g:\NFYYProjects\radiomics\radiomics\classify.py", line 709, in runRandomForest
+    modelRF = RandomForestClassifier(
+  File "G:\Python\3.8.4\lib\site-packages\sklearn\base.py", line 1151, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "G:\Python\3.8.4\lib\site-packages\sklearn\ensemble\_forest.py", line 348, in fit
+    X, y = self._validate_data(
+  File "G:\Python\3.8.4\lib\site-packages\sklearn\base.py", line 621, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+  File "G:\Python\3.8.4\lib\site-packages\sklearn\utils\validation.py", line 1165, in check_X_y
+    check_consistent_length(X, y)
+  File "G:\Python\3.8.4\lib\site-packages\sklearn\utils\validation.py", line 409, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [233, 1]
+2023-08-21 15:20:58,222 - radiomicsTool - ERROR - runRandomForest - 728 - fit() missing 1 required positional argument: 'y'
+Traceback (most recent call last):
+  File "g:\NFYYProjects\radiomics\radiomics\classify.py", line 709, in runRandomForest
+    modelRF = RandomForestClassifier(
+  File "G:\Python\3.8.4\lib\site-packages\sklearn\base.py", line 1151, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+TypeError: fit() missing 1 required positional argument: 'y'
+2023-08-21 15:21:21,669 - radiomicsTool - ERROR - runRandomForest - 728 - 'DataFrame' object has no attribute 'ravel'
+Traceback (most recent call last):
+  File "g:\NFYYProjects\radiomics\radiomics\classify.py", line 726, in runRandomForest
+    ).fit(xTrainRF, yTrainRF.ravel())
+  File "G:\Python\3.8.4\lib\site-packages\pandas\core\generic.py", line 5902, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'ravel'
+2023-08-21 16:17:39,958 - radiomicsTool - ERROR - runPCA - 430 - The 'svd_solver' parameter of PCA must be a str among {'auto', 'arpack', 'randomized', 'full'}. Got False instead.
+Traceback (most recent call last):
+  File "g:\NFYYProjects\radiomics\radiomics\featureselection.py", line 427, in runPCA
+    modelPCA.fit(x, y.values.ravel())
+  File "G:\Python\3.8.4\lib\site-packages\sklearn\base.py", line 1144, in wrapper
+    estimator._validate_params()
+  File "G:\Python\3.8.4\lib\site-packages\sklearn\base.py", line 637, in _validate_params
+    validate_parameter_constraints(
+  File "G:\Python\3.8.4\lib\site-packages\sklearn\utils\_param_validation.py", line 95, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'svd_solver' parameter of PCA must be a str among {'auto', 'arpack', 'randomized', 'full'}. Got False instead.
+2023-08-21 16:19:05,876 - radiomicsTool - ERROR - runPCA - 430 - The 'svd_solver' parameter of PCA must be a str among {'randomized', 'arpack', 'auto', 'full'}. Got False instead.
+Traceback (most recent call last):
+  File "g:\NFYYProjects\radiomics\radiomics\featureselection.py", line 427, in runPCA
+    modelPCA.fit(x, y.values.ravel())
+  File "G:\Python\3.8.4\lib\site-packages\sklearn\base.py", line 1144, in wrapper
+    estimator._validate_params()
+  File "G:\Python\3.8.4\lib\site-packages\sklearn\base.py", line 637, in _validate_params
+    validate_parameter_constraints(
+  File "G:\Python\3.8.4\lib\site-packages\sklearn\utils\_param_validation.py", line 95, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'svd_solver' parameter of PCA must be a str among {'randomized', 'arpack', 'auto', 'full'}. Got False instead.
+2023-08-29 11:25:21,452 - radiomicsTool - INFO - __runExtract - 217 - extractor init begin
+2023-08-29 11:25:21,477 - radiomicsTool - INFO - __runExtract - 244 - extractor init done
+2023-08-29 15:15:35,919 - radiomicsTool - INFO - __runExtract - 221 - extractor init begin
+2023-08-29 15:15:35,924 - radiomicsTool - INFO - __runExtract - 248 - extractor init done
+2023-08-29 15:20:47,006 - radiomicsTool - INFO - __runExtract - 221 - extractor init begin
+2023-08-29 15:20:47,007 - radiomicsTool - INFO - __runExtract - 248 - extractor init done
+2023-08-29 16:00:47,006 - radiomicsTool - INFO - __runExtract - 219 - extractor init begin
+2023-08-29 16:00:47,007 - radiomicsTool - INFO - __runExtract - 246 - extractor init done
+2023-08-29 16:04:14,047 - radiomicsTool - INFO - __runExtract - 219 - extractor init begin
+2023-08-29 16:04:14,048 - radiomicsTool - INFO - __runExtract - 247 - extractor init done
+2023-08-29 16:12:23,375 - radiomicsTool - INFO - __runExtract - 213 - extractor init begin
+2023-08-29 16:12:23,396 - radiomicsTool - INFO - __runExtract - 241 - extractor init done
+2023-08-29 16:47:22,901 - radiomicsTool - INFO - __runExtract - 219 - extractor init begin
+2023-08-29 16:47:22,902 - radiomicsTool - INFO - __runExtract - 246 - extractor init done
+2023-08-29 16:48:41,344 - radiomicsTool - ERROR - __extractNiiFeatures - 202 - BraTS19_CBICA_AVB_1, Label (1) not present in mask. Choose from [2 4]
+Traceback (most recent call last):
+  File "g:\NFYYProjects\radiomics\radiomics\mainprocedure.py", line 197, in __extractNiiFeatures
+    features = self.__extractor.execute(imgPath, maskPath)  # 抽取特征
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\pyradiomics-3.0.1a1-py3.8-win-amd64.egg\radiomics\featureextractor.py", line 272, in execute
+    image, mask = self.loadImage(imageFilepath, maskFilepath, generalInfo, **_settings)
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\pyradiomics-3.0.1a1-py3.8-win-amd64.egg\radiomics\featureextractor.py", line 385, in loadImage
+    mask = imageoperations.getMask(mask, **kwargs)
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\pyradiomics-3.0.1a1-py3.8-win-amd64.egg\radiomics\imageoperations.py", line 58, in getMask
+    raise ValueError('Label (%g) not present in mask. Choose from %s' % (label, labels[labels != 0]))
+ValueError: Label (1) not present in mask. Choose from [2 4]
+2023-08-29 16:51:22,950 - radiomicsTool - INFO - __runExtract - 219 - extractor init begin
+2023-08-29 16:51:22,951 - radiomicsTool - INFO - __runExtract - 246 - extractor init done
+2023-09-08 11:26:57,156 - radiomicsTool - INFO - __runExtract - 219 - extractor init begin
+2023-09-08 11:26:57,157 - radiomicsTool - INFO - __runExtract - 246 - extractor init done
+2023-11-01 10:48:22,358 - radiomicsTool - INFO - __runExtract - 219 - extractor init begin
+2023-11-01 10:48:22,359 - radiomicsTool - INFO - __runExtract - 246 - extractor init done
+2023-11-01 10:59:11,991 - radiomicsTool - INFO - __runExtract - 219 - extractor init begin
+2023-11-01 10:59:11,991 - radiomicsTool - INFO - __runExtract - 246 - extractor init done
+2023-11-01 11:26:49,832 - radiomicsTool - INFO - __runExtract - 219 - extractor init begin
+2023-11-01 11:26:49,833 - radiomicsTool - INFO - __runExtract - 246 - extractor init done
+2023-11-01 15:11:37,383 - radiomicsTool - ERROR - runMUIF - 460 - at least one array or dtype is required
+Traceback (most recent call last):
+  File "g:\NFYYProjects\radiomics\radiomics\featureselection.py", line 448, in runMUIF
+    x = SelectKBest(mutual_info_classif, k=utils.muifParam["k"]).fit_transform(
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\utils\_set_output.py", line 140, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\base.py", line 918, in fit_transform
+    return self.fit(X, y, **fit_params).transform(X)
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\base.py", line 1151, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\feature_selection\_univariate_selection.py", line 498, in fit
+    X, y = self._validate_data(
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\base.py", line 621, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\utils\validation.py", line 1147, in check_X_y
+    X = check_array(
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\utils\validation.py", line 797, in check_array
+    dtype_orig = np.result_type(*dtypes_orig)
+  File "<__array_function__ internals>", line 200, in result_type
+ValueError: at least one array or dtype is required
+2023-11-01 15:11:59,149 - radiomicsTool - ERROR - runRandomForest - 728 - at least one array or dtype is required
+Traceback (most recent call last):
+  File "g:\NFYYProjects\radiomics\radiomics\classify.py", line 709, in runRandomForest
+    modelRF = RandomForestClassifier(
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\base.py", line 1151, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\ensemble\_forest.py", line 348, in fit
+    X, y = self._validate_data(
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\base.py", line 621, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\utils\validation.py", line 1147, in check_X_y
+    X = check_array(
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\utils\validation.py", line 797, in check_array
+    dtype_orig = np.result_type(*dtypes_orig)
+  File "<__array_function__ internals>", line 200, in result_type
+ValueError: at least one array or dtype is required
+2023-11-01 15:14:49,687 - radiomicsTool - INFO - __runExtract - 219 - extractor init begin
+2023-11-01 15:14:49,687 - radiomicsTool - INFO - __runExtract - 246 - extractor init done
+2023-11-01 16:25:39,516 - radiomicsTool - ERROR - runPCA - 430 - n_components=99 must be between 0 and min(n_samples, n_features)=17 with svd_solver='full'
+Traceback (most recent call last):
+  File "g:\NFYYProjects\radiomics\radiomics\featureselection.py", line 427, in runPCA
+    modelPCA.fit(x, y.values.ravel())
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\base.py", line 1151, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\decomposition\_pca.py", line 434, in fit
+    self._fit(X)
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\decomposition\_pca.py", line 510, in _fit
+    return self._fit_full(X, n_components)
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\decomposition\_pca.py", line 524, in _fit_full
+    raise ValueError(
+ValueError: n_components=99 must be between 0 and min(n_samples, n_features)=17 with svd_solver='full'
+2024-05-08 11:55:35,181 - radiomicsTool - INFO - __runExtract - 219 - extractor init begin
+2024-05-08 11:55:35,182 - radiomicsTool - INFO - __runExtract - 246 - extractor init done
+2024-05-08 11:56:29,453 - radiomicsTool - INFO - __runExtract - 219 - extractor init begin
+2024-05-08 11:56:29,453 - radiomicsTool - INFO - __runExtract - 246 - extractor init done
+2024-05-13 16:59:30,193 - radiomicsTool - ERROR - runChi2 - 486 - Input X must be non-negative.
+Traceback (most recent call last):
+  File "g:\NFYYProjects\radiomics\radiomics\featureselection.py", line 479, in runChi2
+    x = SelectPercentile(
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\utils\_set_output.py", line 140, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\base.py", line 918, in fit_transform
+    return self.fit(X, y, **fit_params).transform(X)
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\base.py", line 1151, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\feature_selection\_univariate_selection.py", line 503, in fit
+    score_func_ret = self.score_func(X, y)
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\utils\_param_validation.py", line 184, in wrapper
+    return func(*args, **kwargs)
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\feature_selection\_univariate_selection.py", line 231, in chi2
+    raise ValueError("Input X must be non-negative.")
+ValueError: Input X must be non-negative.
+2024-05-13 17:00:27,153 - radiomicsTool - ERROR - runChi2 - 486 - Input X must be non-negative.
+Traceback (most recent call last):
+  File "g:\NFYYProjects\radiomics\radiomics\featureselection.py", line 479, in runChi2
+    x = SelectPercentile(
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\utils\_set_output.py", line 140, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\base.py", line 918, in fit_transform
+    return self.fit(X, y, **fit_params).transform(X)
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\base.py", line 1151, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\feature_selection\_univariate_selection.py", line 503, in fit
+    score_func_ret = self.score_func(X, y)
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\utils\_param_validation.py", line 184, in wrapper
+    return func(*args, **kwargs)
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\feature_selection\_univariate_selection.py", line 231, in chi2
+    raise ValueError("Input X must be non-negative.")
+ValueError: Input X must be non-negative.
+2024-05-13 17:02:58,537 - radiomicsTool - ERROR - runChi2 - 468 - Input X must be non-negative.
+Traceback (most recent call last):
+  File "g:\NFYYProjects\radiomics\radiomics\featureselection.py", line 461, in runChi2
+    x = SelectPercentile(
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\utils\_set_output.py", line 140, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\base.py", line 918, in fit_transform
+    return self.fit(X, y, **fit_params).transform(X)
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\base.py", line 1151, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\feature_selection\_univariate_selection.py", line 503, in fit
+    score_func_ret = self.score_func(X, y)
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\utils\_param_validation.py", line 184, in wrapper
+    return func(*args, **kwargs)
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\feature_selection\_univariate_selection.py", line 231, in chi2
+    raise ValueError("Input X must be non-negative.")
+ValueError: Input X must be non-negative.
+2024-05-14 09:39:28,413 - radiomicsTool - ERROR - runChi2 - 468 - wrapped() missing 1 required positional argument: 'X'
+Traceback (most recent call last):
+  File "g:\NFYYProjects\radiomics\radiomics\featureselection.py", line 454, in runChi2
+    x = MinMaxScaler.fit_transform(x)  # 卡方检测x不能为负数，所以先归一化到[0, 1]
+TypeError: wrapped() missing 1 required positional argument: 'X'
+2024-05-14 09:40:37,177 - radiomicsTool - ERROR - runChi2 - 468 - wrapped() missing 1 required positional argument: 'self'
+Traceback (most recent call last):
+  File "g:\NFYYProjects\radiomics\radiomics\featureselection.py", line 454, in runChi2
+    x = MinMaxScaler.fit_transform(X=x)  # 卡方检测x不能为负数，所以先归一化到[0, 1]
+TypeError: wrapped() missing 1 required positional argument: 'self'
+2024-05-14 17:14:08,478 - radiomicsTool - INFO - __runExtract - 219 - extractor init begin
+2024-05-14 17:14:08,478 - radiomicsTool - INFO - __runExtract - 246 - extractor init done
+2024-05-14 17:15:25,142 - radiomicsTool - INFO - __runExtract - 219 - extractor init begin
+2024-05-14 17:15:25,142 - radiomicsTool - INFO - __runExtract - 246 - extractor init done
+2024-05-14 17:15:25,171 - radiomicsTool - ERROR - __extractDicomFeatures - 189 - 20230222, __showExtractMsg() takes 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "g:\NFYYProjects\radiomics\radiomics\mainprocedure.py", line 173, in __extractDicomFeatures
+    testCase = self.__getTestCase(imgPath, maskPath)
+  File "g:\NFYYProjects\radiomics\radiomics\mainprocedure.py", line 158, in __getTestCase
+    imgInfo = self.__readDicomSeries(imgPath)
+  File "g:\NFYYProjects\radiomics\radiomics\mainprocedure.py", line 141, in __readDicomSeries
+    self.__showExtractMsg("dicom series_ids is ", series_ids)
+TypeError: __showExtractMsg() takes 2 positional arguments but 3 were given
+2024-05-14 17:18:12,598 - radiomicsTool - INFO - __runExtract - 219 - extractor init begin
+2024-05-14 17:18:12,599 - radiomicsTool - INFO - __runExtract - 246 - extractor init done
+2024-05-15 11:02:23,066 - radiomicsTool - INFO - __runExtract - 250 - extractor init begin
+2024-05-15 11:02:23,070 - radiomicsTool - INFO - __runExtract - 277 - extractor init done
+2024-05-15 11:11:27,273 - radiomicsTool - INFO - __runExtract - 250 - extractor init begin
+2024-05-15 11:11:27,274 - radiomicsTool - INFO - __runExtract - 277 - extractor init done
+2024-05-15 11:11:27,584 - radiomicsTool - ERROR - __extractDicomFeatures - 220 - 1, Exception thrown in SimpleITK ImageFileReader_Execute: D:\bld\libsimpleitk_1670439920316\work\Code\IO\src\sitkImageReaderBase.cxx:97:
+sitk::ERROR: The file "G:/NFYYProjects/radiomics/radiomics/data/CHAOS/CHAOS_Train/Train_Sets/CT/N\1\maskliver_GT_000.png" does not exist.
+Traceback (most recent call last):
+  File "g:\NFYYProjects\radiomics\radiomics\mainprocedure.py", line 182, in __extractDicomFeatures
+    sitk.ReadImage(maskPath + item))  #获取图像数组
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\SimpleITK\extra.py", line 355, in ReadImage
+    return reader.Execute()
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\SimpleITK\SimpleITK.py", line 8438, in Execute
+    return _SimpleITK.ImageFileReader_Execute(self)
+RuntimeError: Exception thrown in SimpleITK ImageFileReader_Execute: D:\bld\libsimpleitk_1670439920316\work\Code\IO\src\sitkImageReaderBase.cxx:97:
+sitk::ERROR: The file "G:/NFYYProjects/radiomics/radiomics/data/CHAOS/CHAOS_Train/Train_Sets/CT/N\1\maskliver_GT_000.png" does not exist.
+2024-05-15 11:14:49,121 - radiomicsTool - INFO - __runExtract - 250 - extractor init begin
+2024-05-15 11:14:49,121 - radiomicsTool - INFO - __runExtract - 277 - extractor init done
+2024-05-15 11:28:20,401 - radiomicsTool - INFO - __runExtract - 250 - extractor init begin
+2024-05-15 11:28:20,401 - radiomicsTool - INFO - __runExtract - 277 - extractor init done
+2024-05-15 11:39:55,936 - radiomicsTool - INFO - __runExtract - 250 - extractor init begin
+2024-05-15 11:39:55,936 - radiomicsTool - INFO - __runExtract - 277 - extractor init done
+2024-05-15 11:48:21,808 - radiomicsTool - INFO - __runExtract - 250 - extractor init begin
+2024-05-15 11:48:21,809 - radiomicsTool - INFO - __runExtract - 276 - extractor init done
+2024-05-15 11:55:38,704 - radiomicsTool - INFO - __runExtract - 250 - extractor init begin
+2024-05-15 11:55:38,705 - radiomicsTool - INFO - __runExtract - 276 - extractor init done
+2024-05-15 12:01:45,438 - radiomicsTool - INFO - __runExtract - 250 - extractor init begin
+2024-05-15 12:01:45,438 - radiomicsTool - INFO - __runExtract - 276 - extractor init done
+2024-05-15 12:47:59,972 - radiomicsTool - INFO - __runExtract - 250 - extractor init begin
+2024-05-15 12:47:59,972 - radiomicsTool - INFO - __runExtract - 276 - extractor init done
+2024-05-16 08:20:58,638 - radiomicsTool - INFO - __runExtract - 250 - extractor init begin
+2024-05-16 08:20:58,638 - radiomicsTool - INFO - __runExtract - 276 - extractor init done
+2024-05-16 08:43:08,185 - radiomicsTool - ERROR - runSVM - 742 - at least one array or dtype is required
+Traceback (most recent call last):
+  File "g:\NFYYProjects\radiomics\radiomics\classify.py", line 727, in runSVM
+    modelSVM = svm.SVC(
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\base.py", line 1151, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\svm\_base.py", line 190, in fit
+    X, y = self._validate_data(
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\base.py", line 621, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\utils\validation.py", line 1147, in check_X_y
+    X = check_array(
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\utils\validation.py", line 797, in check_array
+    dtype_orig = np.result_type(*dtypes_orig)
+  File "<__array_function__ internals>", line 200, in result_type
+ValueError: at least one array or dtype is required
+2024-05-16 08:43:57,913 - radiomicsTool - ERROR - runSVM - 742 - at least one array or dtype is required
+Traceback (most recent call last):
+  File "g:\NFYYProjects\radiomics\radiomics\classify.py", line 727, in runSVM
+    modelSVM = svm.SVC(
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\base.py", line 1151, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\svm\_base.py", line 190, in fit
+    X, y = self._validate_data(
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\base.py", line 621, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\utils\validation.py", line 1147, in check_X_y
+    X = check_array(
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\utils\validation.py", line 797, in check_array
+    dtype_orig = np.result_type(*dtypes_orig)
+  File "<__array_function__ internals>", line 200, in result_type
+ValueError: at least one array or dtype is required
+2024-05-16 08:44:33,300 - radiomicsTool - ERROR - runSVM - 742 - at least one array or dtype is required
+Traceback (most recent call last):
+  File "g:\NFYYProjects\radiomics\radiomics\classify.py", line 727, in runSVM
+    modelSVM = svm.SVC(
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\base.py", line 1151, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\svm\_base.py", line 190, in fit
+    X, y = self._validate_data(
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\base.py", line 621, in _validate_data
+    X, y = check_X_y(X, y, **check_params)
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\utils\validation.py", line 1147, in check_X_y
+    X = check_array(
+  File "G:\Anaconda\envs\radiomics\lib\site-packages\sklearn\utils\validation.py", line 797, in check_array
+    dtype_orig = np.result_type(*dtypes_orig)
+  File "<__array_function__ internals>", line 200, in result_type
+ValueError: at least one array or dtype is required
+2024-05-24 15:36:12,337 - radiomicsTool - INFO - __runExtract - 250 - extractor init begin
+2024-05-24 15:36:12,337 - radiomicsTool - INFO - __runExtract - 276 - extractor init done
